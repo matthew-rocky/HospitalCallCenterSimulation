@@ -10,69 +10,66 @@
 - [3. System Architecture](#system-architecture)
 - [4. Model Behavior Description](#model-behavior-description)
 - [5. How to Run the Project](#how-to-run-the-project)
-- [6. Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
-- [7. Project Status](#project-status)
-- [8. Limitations & Assumptions](#limitations--assumptions)
-- [9. Reference](#reference)
+- [6. Results and Insights](#Results-and-Insights)
+- [7. My Contribution](#my-Contribution)
+- [8. Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
+- [9. Project Status](#project-status)
+- [10. Limitations & Assumptions](#limitations--assumptions)
+- [11. Reference](#reference)
 
 ---
 
 ------------------------------------------------------------
 PROJECT OVERVIEW
 ------------------------------------------------------------
-This project presents a fully developed Discrete-Event Simulation (DES) of a
-children’s hospital call center responsible for scheduling appointments for two
-types of services:
+This project presents a complete Discrete-Event Simulation (DES) of a children’s hospital call center responsible for handling appointment scheduling for two major services:
 
-• Exams (diagnostic imaging, tests)
+• Exams (diagnostic imaging, test bookings)
 
-• Consultations (medical assessment appointments)
+• Consultations (medical assessments)
 
-The goal of the simulation is to model the incoming call flow, queueing
-behavior, ringing behavior, abandonment patterns, agent workloads, staffing
-constraints, and different operational scenarios in order to analyze system
-performance and identify meaningful improvements.
+
+The simulation models the full lifecycle of a call, including arrivals, ringing cycles, queueing, abandonment, service handling, and staffing interactions.
+Its purpose is to evaluate operational performance under multiple system configurations and identify improvements supported by quantitative evidence.
 
 ------------------------------------------------------------
 OBJECTIVES
 ------------------------------------------------------------
-• Build an accurate, modular discrete-event simulation of a real-world
-  hospital call center.
+• Develop an accurate and modular discrete-event simulation based on a real children’s hospital call center.
 
 
-• Represent all essential behaviors:
+• Represent key operational behaviors, including:
 
-  - Time-varying arrival rates
-  - Ringing stage with cyclic attempts
-  - Ring abandonment
-  - Queueing and queue abandonment
-  - Service handling times with lognormal distributions
-  - Agent inefficiency (~40% of shift)
-  - Distinct call-type behavior per service
+  - Time-varying (NHPP) arrival rates
+  - Ringing stage with repeated attempts
+  - Ringing abandonment
+  - Queueing with patience-based abandonment
+  - Lognormal service-time distributions
+  - Agent inefficiency (~40% of shift unavailable)
+  - Distinct behaviors for Exam vs. Consultation calls
 
 
-• Experiment with multiple system-improvement scenarios:
+• Evaluate multiple system-improvement scenarios:
 
-  - Scenario #1: Remove ring stage (“ring_cancel”)
+  - Scenario #1: Remove ringing stage (“ring_cancel”)
   - Scenario #2: Add staffing (“schedule”)
-  - Scenario #3: Merge services (“centralize”)
+  - Scenario #3: Merge all services (“centralize”)
 
 
-• Validate system performance using key indicators:
+• Validate performance using:
 
   - Abandonment rate
-  - SLA (calls answered within 10 seconds)
-  - Queue waiting time
-  - Handle time
+  - SLA (calls answered ≤10 seconds)
+  - Queueing KPIs
+  - Handle-time metrics
   - Agent utilization
 
-• Provide an interactive visualization interface through Streamlit.
+• Provide an interactive visualization and results interface via Streamlit.
 
 ------------------------------------------------------------
 SYSTEM ARCHITECTURE
 ------------------------------------------------------------
-The project is organized into modular Python files for clarity,
-reusability, and maintainability.
+The project is fully modularized to support maintainability, clear logic separation, and scenario experimentation.
 
 Directory layout:
 
@@ -243,10 +240,10 @@ KEY PERFORMANCE INDICATORS (KPIs)
 The model generates:
 
 • Abandonment rate  
-• SLA (calls answered within 10 seconds)  
-• Average queue waiting time (non-zero only)  
-• Average handle time  
-• Arrivals & answered calls  
+• SLA performance (≤10 seconds)
+• Average queue-wait time (non-zero)
+• Average handle time
+• Arrivals and answered calls
 • Agent utilization  
 
 ------------------------------------------------------------
