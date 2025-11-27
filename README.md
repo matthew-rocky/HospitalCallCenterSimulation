@@ -2,6 +2,7 @@
 ### SYS 5110 — Modelling & Simulation (Fall 2025)  
 ### University of Ottawa 
 
+A discrete-event simulation of a children’s hospital call center, modeling NHPP arrivals, ringing behavior, queue abandonment, and multi-service staffing. Built using SimPy with full scenario analysis and validation.
 ---
 
 # Table of Contents
