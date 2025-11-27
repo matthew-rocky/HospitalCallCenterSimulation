@@ -279,13 +279,28 @@ LIMITATIONS & ASSUMPTIONS
 
 
 ------------------------------------------------------------
-Output Sample of Baseline
+Output of four scenarios 
 ------------------------------------------------------------
 
+### Baseline
 <p align="center">
   <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/01%20-%20Baseline.jpg" width="700">
 </p>
 
+### Ring Cancel
+<p align="center">
+  <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/02%20-%20Ring_Cancel.jpg" width="700">
+</p>
+
+### Schedule
+<p align="center">
+  <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/03%20-%20Schedule.jpg" width="700">
+</p>
+
+### Centralize
+<p align="center">
+  <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/04%20-%20Centralize.jpg" width="700">
+</p>
 
 ------------------------------------------------------------
 REFERENCE
