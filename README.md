@@ -212,6 +212,23 @@ Install required Python packages:
     reps = run_experiment(cfg, "schedule", 50)
     stats = summarize_statistics(reps)
     print(stats)
+------------------------------------------------------------
+Results and Insights
+------------------------------------------------------------
+The model reveals how operational decisions affect:
+
+• Abandonment levels
+• Waiting time distributions
+• Agent utilization
+• Service level achievement
+• Queueing behavior
+• Patient experience
+
+Across the four scenarios, the Full Centralization configuration consistently produced the best performance due to pooled variability and improved resource sharing.
+------------------------------------------------------------
+My Contribution
+------------------------------------------------------------
+I independently developed the full simulation engine, implemented all scenario configurations, built the Streamlit dashboard, and authored the complete final report.
 
 ------------------------------------------------------------
 KEY PERFORMANCE INDICATORS (KPIs)
