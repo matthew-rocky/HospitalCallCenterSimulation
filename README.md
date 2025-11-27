@@ -282,7 +282,10 @@ LIMITATIONS & ASSUMPTIONS
 Output Sample of Baseline Scenario
 ------------------------------------------------------------
 
-!(https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/01%20-%20Baseline.jpg)
+<p align="center">
+  <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/01%20-%20Baseline.jpg" width="700">
+</p>
+
 
 ------------------------------------------------------------
 REFERENCE
