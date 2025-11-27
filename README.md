@@ -15,6 +15,7 @@
 - [8. Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
 - [9. Project Status](#project-status)
 - [10. Limitations & Assumptions](#limitations--assumptions)
+- [11. Sample Output](#Sample-output)
 - [11. Reference](#reference)
 
 ---
@@ -275,6 +276,13 @@ LIMITATIONS & ASSUMPTIONS
 • Patience modeled with exponential distributions.  
 • Handle times follow lognormal assumptions.  
 • Some real-world behaviors are approximated based on the paper.
+
+
+------------------------------------------------------------
+Output Sample of Baseline Scenario
+------------------------------------------------------------
+
+!(https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/01%20-%20Baseline.jpg)
 
 ------------------------------------------------------------
 REFERENCE
