@@ -15,7 +15,7 @@
 - [8. Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
 - [9. Project Status](#project-status)
 - [10. Limitations & Assumptions](#limitations--assumptions)
-- [11. Sample Output](#Sample-output)
+- [11. Sample Output of Baseline](#Output-Sample-of-Baseline)
 - [11. Reference](#reference)
 
 ---
@@ -279,7 +279,7 @@ LIMITATIONS & ASSUMPTIONS
 
 
 ------------------------------------------------------------
-Output Sample of Baseline Scenario
+Output Sample of Baseline
 ------------------------------------------------------------
 
 <p align="center">
