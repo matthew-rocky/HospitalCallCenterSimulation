@@ -296,20 +296,36 @@ Output Samples
   <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/01%20-%20Baseline.jpg" width="700">
 </p>
 
+Baseline system performance showing high congestion, long queue waits, and elevated abandonment due to limited staffing and high demand.
+
+
 ### Ring Cancel
 <p align="center">
   <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/02%20-%20Ring_Cancel.jpg" width="700">
 </p>
+
+
+Ringing stage removed: callers enter the queue immediately, reducing ringing abandonment but lowering SLA by increasing initial queue load.
+
+
 
 ### Schedule
 <p align="center">
   <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/03%20-%20Schedule.jpg" width="700">
 </p>
 
+
+Staffing reinforcement with +2 Exam agents and +1 Consult agent significantly reduces waiting times and abandonment while improving SLA performance.
+
+
+
 ### Centralize
 <p align="center">
   <img src="https://github.com/matthew-rocky/HospitalCallCenterSimulation/blob/main/sample_output/04%20-%20Centralize.jpg" width="700">
 </p>
+
+
+Full centralization merges Exam and Consult services into a shared agent pool, leveraging pooled variability to improve throughput and overall system stability.
 
 ------------------------------------------------------------
 REFERENCE
