@@ -10,13 +10,14 @@
 - [3. System Architecture](#system-architecture)
 - [4. Model Behavior Description](#model-behavior-description)
 - [5. How to Run the Project](#how-to-run-the-project)
-- [6. Results and Insights](#Results-and-Insights)
-- [7. My Contribution](#my-Contribution)
-- [8. Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
-- [9. Project Status](#project-status)
-- [10. Limitations & Assumptions](#limitations--assumptions)
-- [11. Sample Output of Baseline](#Output-Sample-of-Baseline)
-- [12. Reference](#reference)
+- [6. Technologies Used](#Technologies-used)
+- [7. Results and Insights](#Results-and-Insights)
+- [8. My Contribution](#my-Contribution)
+- [9. Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
+- [10. Project Status](#project-status)
+- [11. Limitations & Assumptions](#limitations--assumptions)
+- [12. Sample Outputs](#Sample-Outputs)
+- [13. Reference](#reference)
 
 ---
 
@@ -210,6 +211,13 @@ Install required Python packages:
     reps = run_experiment(cfg, "schedule", 50)
     stats = summarize_statistics(reps)
     print(stats)
+
+------------------------------------------------------------
+Technologies Used
+------------------------------------------------------------
+
+Python, SimPy, Streamlit, NumPy, Pandas, Matplotlib
+
 ------------------------------------------------------------
 Results and Insights
 ------------------------------------------------------------
@@ -279,7 +287,7 @@ LIMITATIONS & ASSUMPTIONS
 
 
 ------------------------------------------------------------
-Output of four scenarios 
+Output Samples
 ------------------------------------------------------------
 
 ### Baseline
