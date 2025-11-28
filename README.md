@@ -92,7 +92,7 @@ Directory layout:
 ## MODEL BEHAVIOR DESCRIPTION
 ------------------------------------------------------------
 
-4.1 Time-Varying Arrivals (NHPP)
+Time-Varying Arrivals (NHPP)
 Calls arrive according to a Nonhomogeneous Poisson Process (NHPP).  
 Hourly arrival rates create realistic daily patterns:
 - Morning peak
@@ -101,7 +101,7 @@ Hourly arrival rates create realistic daily patterns:
 
 ------------------------------------------------------------
 
-4.2 Ringing Stage & Abandonment
+Ringing Stage & Abandonment
 When a call arrives:
 1. Caller enters a 15‑second ringing cycle.
 2. If an agent becomes available, the call is answered.
@@ -112,7 +112,7 @@ This models realistic “ring → ring → hang up” behavior.
 
 ------------------------------------------------------------
 
-4.3 Queueing Stage & Abandonment
+Queueing Stage & Abandonment
 If a caller survives the ringing stage:
 1. They join a FIFO queue.
 2. Waiting time accumulates until an agent is available.
@@ -121,7 +121,7 @@ If a caller survives the ringing stage:
 
 ------------------------------------------------------------
 
-4.4 Call-Type Handling
+Call-Type Handling
 Each service (Exam and Consultation) includes multiple call types:
 - First contact
 - Appointment booking
@@ -134,7 +134,7 @@ Each call type has:
 
 ------------------------------------------------------------
 
-4.5 Agent Inefficiency (~40%)
+Agent Inefficiency (~40%)
 Agents are not available for calls 100% of the time.  
 Shift-time losses (~40%) come from:
 - Breaks
@@ -146,7 +146,7 @@ This is modeled as temporary capacity reductions.
 
 ------------------------------------------------------------
 
-4.6 Scenario Definitions (from WSC 2018)
+Scenario Definitions (from WSC 2018)
 
 Scenario 0: baseline
 - Independent Exam & Consult services
@@ -172,12 +172,12 @@ Scenario 3: centralize
 HOW TO RUN THE PROJECT
 ------------------------------------------------------------
 
-5.1 Install Dependencies
+Install Dependencies
 Install required Python packages:
 
     pip install simpy streamlit pandas numpy
 
-5.1.1 Requirements
+Requirements
 
     Python 3.10+
     SimPy
@@ -186,16 +186,16 @@ Install required Python packages:
     Streamlit
     Matplotlib / Plotly (optional)
 
-5.1.2 Install everything via:
+Install everything via:
 
     pip install -r requirements.txt
 
 
-5.2 Launch the Streamlit Dashboard
+Launch the Streamlit Dashboard
 
     streamlit run streamlit_app.py
 
-5.3 Run a Simulation Programmatically
+Run a Simulation Programmatically
 
     from config import ModelConfig
     from run import run_once
@@ -204,7 +204,7 @@ Install required Python packages:
     result = run_once(cfg, "baseline")
     print(result)
 
-5.4 Multiple Replications + Statistics
+Multiple Replications + Statistics
 
     from validation import run_experiment, summarize_statistics
 
