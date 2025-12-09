@@ -135,10 +135,9 @@ def main() -> None:
 
         st.markdown("**Group Members**")
         members = [
-            ("Matthew Rocky", "300375808"),
-            ("Dima AlQaruoti", "300379269"),
-            ("Naghmeh Arabchigavgani", "300386495"),
-            ("Salwa Kouttane", "300218196"),
+            ("Matthew Rocky"),
+            ("Dima AlQaruoti"),
+            ("Salwa Kouttane"),
         ]
         lines = []
         for name, sid in members:
