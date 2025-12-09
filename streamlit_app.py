@@ -135,15 +135,19 @@ def main() -> None:
 
         st.markdown("**Group Members**")
         members = [
-            ("Matthew Rocky"),
-            ("Dima AlQaruoti"),
-            ("Salwa Kouttane"),
+            "Matthew Rocky",
+            "Dima AlQaruoti",
+            "Salwa Kouttane",
         ]
         lines = []
-        for name, sid in members:
-            label = f"{name} ({sid})"
-            if len(label) > 36:
-                label = name
+        for entry in members:
+            if isinstance(entry, (list, tuple)) and len(entry) == 2:
+                name, sid = entry
+                label = f"{name} ({sid})"
+                if len(label) > 36:
+                    label = name
+            else:
+                label = str(entry)
             lines.append(f"- {label}")
         st.markdown("\n".join(lines))
 
@@ -301,7 +305,7 @@ def main() -> None:
         bg = st.get_option("theme.backgroundColor")
         txt = st.get_option("theme.textColor")
         if not bg or not txt:
-            plt.style.use("dark_background")
+            plt.style.use("default")
             fig, ax = plt.subplots()
         else:
             fig, ax = plt.subplots()
